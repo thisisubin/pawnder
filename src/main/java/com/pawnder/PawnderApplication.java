@@ -1,4 +1,4 @@
-package com.pawnder.pawnder;
+package com.pawnder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
