@@ -8,6 +8,8 @@ import lombok.Setter;
 
 import java.lang.reflect.Member;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -28,4 +30,6 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Pet> pets = new ArrayList<>();
 }
